@@ -1,13 +1,96 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
 
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-    <script type="module" src="/src/renderer.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>KINOMI</title>
+</head>
+
+<body>
+  <header>
+    <h1>KINOMI</h1>
+    <span id="version">v0.1.0</span>
+  </header>
+  <main>
+    <div id="menu">
+      <ul>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li class="menu-active">
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+        <li>
+          <img src="img/kl_320.png" />
+          <span>hogehoge</span>
+        </li>
+      </ul>
+    </div>
+    <div id="main">
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>ID</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>main</td>
+            <td>abcd123</td>
+            <td>2026-01-23 01:23:45</td>
+            <td class="main-buttons">
+              <button class="button-install">Install</button>
+              <button class="button-config">⚙</button>
+            </td>
+          </tr>
+          <tr>
+            <td>main</td>
+            <td>abcd123</td>
+            <td>2026-01-23 01:23:45</td>
+            <td class="main-buttons">
+              <button class="button-play">Play</button>
+              <button class="button-config">⚙</button>
+            </td>
+          </tr>
+          <tr>
+            <td>tags</td>
+            <td>v0.1.0</td>
+            <td>2026-01-23 01:23:45</td>
+            <td class="main-buttons">
+              <button class="button-install">Install</button>
+              <button class="button-config">⚙</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script type="module" src="/src/renderer.ts"></script>
+</body>
+
 </html>
