@@ -31,11 +31,11 @@ const createWindow = () => {
     );
   }
 
-  // メニューを消す
+  // メニューを非表示にする
   Menu.setApplicationMenu(null);
 
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

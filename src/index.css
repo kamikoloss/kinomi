@@ -25,7 +25,8 @@
 
 html,
 body,
-main {
+main,
+main>div {
   height: 100%;
 }
 
@@ -57,6 +58,12 @@ h2 {
   font-weight: 700;
 }
 
+input {
+  height: 2rem;
+  padding: 0 0.5rem;
+  outline: none;
+}
+
 header {
   position: fixed;
   display: flex;
@@ -71,11 +78,6 @@ header {
 
 main {
   padding-top: env(titlebar-area-height);
-
-  &>div {
-    display: flex;
-    height: 100%;
-  }
 }
 
 li {
@@ -113,6 +115,24 @@ tr {
 #app {
   width: 100%;
   overflow-y: scroll;
+}
+
+#auth {
+  padding: 1rem;
+
+  input {
+    display: block;
+    width: 32rem;
+  }
+
+  button {
+    width: 16rem;
+    height: 2rem;
+  }
+}
+
+#main {
+  display: flex;
 }
 
 #menu {
@@ -179,8 +199,40 @@ tr {
 
 /* tailwind */
 
+.hidden {
+  display: none !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .text-gray-500 {
   color: var(--color-gray-500);
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-sm {
@@ -191,12 +243,4 @@ tr {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
