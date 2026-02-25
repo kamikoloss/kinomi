@@ -34,6 +34,7 @@ console.log(
 
 window.addEventListener('DOMContentLoaded', () => {
   // 表示初期化
-  document.getElementById('login').classList.add('hidden');
-  document.getElementById('main').classList.add('hidden');
+  document.getElementById('loading').classList.add('hidden');
+  document.getElementById('auth').classList.add('hidden');
+  //document.getElementById('main').classList.add('hidden');
 });
