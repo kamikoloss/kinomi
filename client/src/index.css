@@ -1,6 +1,6 @@
 :root {
   font-family: consolas, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5rem;
   color: var(--color-gray-900);
@@ -39,7 +39,7 @@ select {
 
 button {
   position: relative;
-  height: 1.5rem;
+  height: 2rem;
   border: none;
   cursor: pointer;
 
@@ -93,7 +93,7 @@ table {
 
 th,
 td {
-  height: 2rem;
+  height: 2.5rem;
   padding: 0 0.5rem;
   border-bottom: 1px solid var(--color-gray-200);
 }
@@ -114,6 +114,7 @@ tr {
   }
 }
 
+/* loading */
 
 #loading {
   position: fixed;
@@ -122,6 +123,22 @@ tr {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(from var(--color-gray-500) r g b / 0.2);
+}
+
+.loader {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 0.5rem solid var(--color-gray-100);
+  border-top-color: var(--color-gray-300);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* #auth */
@@ -136,7 +153,6 @@ tr {
 
   button {
     width: 16rem;
-    height: 2rem;
   }
 }
 
@@ -152,14 +168,14 @@ tr {
 }
 
 #menu {
-  width: 40%;
+  width: 50%;
   height: 100%;
   overflow-y: scroll;
   border-right: 1px solid var(--color-gray-300);
 
   img {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   li {
@@ -167,7 +183,7 @@ tr {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
-    height: 2rem;
+    height: 2.5rem;
     padding-left: 0.5rem;
     border-bottom: 1px solid var(--color-gray-200);
     cursor: pointer;
@@ -203,29 +219,14 @@ tr {
 }
 
 .button-install {
-  width: 6rem;
+  width: 8rem;
   background-color: var(--color-gray-300);
 }
 
 .button-play {
-  width: 6rem;
+  width: 8rem;
   color: var(--color-gray-100);
   background-color: var(--color-primary);
-}
-
-.loader {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  border: 0.5rem solid var(--color-gray-100);
-  border-top-color: var(--color-gray-300);
-  animation: spin 0.8s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 /* tailwind */
