@@ -37,4 +37,9 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('loading').classList.add('hidden');
   document.getElementById('auth').classList.add('hidden');
   //document.getElementById('main').classList.add('hidden');
+
+  // バージョン表示
+  window.api.getVersion().then(version => {
+    document.getElementById('version').innerHTML = version;
+  });
 });
