@@ -198,10 +198,6 @@ tr {
   }
 }
 
-#version {
-  color: var(--color-gray-300);
-}
-
 .menu-active {
   background-color: var(--color-gray-200);
 }
