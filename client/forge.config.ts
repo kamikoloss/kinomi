@@ -54,6 +54,18 @@ const config: ForgeConfig = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'kamikoloss',
+          name: 'kinomi'
+        },
+        prerelease: true
+      }
+    }
+  ]
 };
 
 export default config;
