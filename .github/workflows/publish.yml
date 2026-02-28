@@ -24,5 +24,9 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
-      - run: npx electron-forge publish
+      - name: Install deps (client)
+        working-directory: client
+        run: npm ci
+      - name: Publish (client)
+        working-directory: client
+        run: npx electron-forge publish
