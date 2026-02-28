@@ -54,6 +54,7 @@ const config: ForgeConfig = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  // https://js.electronforge.io/interfaces/_electron_forge_publisher_github.PublisherGitHubConfig.html
   publishers: [
     {
       name: '@electron-forge/publisher-github',
@@ -62,7 +63,8 @@ const config: ForgeConfig = {
           owner: 'kamikoloss',
           name: 'kinomi'
         },
-        prerelease: true
+        draft: false,
+        prerelease: false,
       }
     }
   ]
