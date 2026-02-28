@@ -5,6 +5,7 @@
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "private": true,
+  "repository": "kamikoloss/kinomi",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
